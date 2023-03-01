@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+*{
+padding:0;
+margin:0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(232, 237, 234);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.isLoading{
+  color:blue;
+  margin-top:40px;
+  margin-left: 40%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  margin-top: 40px;
+}
+.userList{
+  color:darkgreen;
+  margin-left:40%;
+}
+input{
+  margin-top: 12px;
+  width: 30%;
+  padding: 6px;
+  border-radius:5px;
+  border: 2px darkgreen solid;
+  margin-left:30%;
+}
+.card{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  
+}
+.list{
+ 
+  background-color:white;
+  color:darkgreen;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow:0 8px 16px rgba(0, 0, 0, 0.3);
+  cursor:pointer;
+}
+.list:hover{
+  background-color:darkgreen;
+  color: rgb(232, 237, 234);
+  transition: .3s;
+}
+ul{
+  padding: 20px;
+}
+li{
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
